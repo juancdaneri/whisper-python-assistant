@@ -43,7 +43,7 @@ class TtsTalker:
         self.engine = pyttsx3.init()
         self.engine.setProperty('rate', 145)
         self.voices = self.engine.getProperty('voices')
-        self.engine.setProperty('voice', self.voices[3].id)
+        self.engine.setProperty('voice', self.voices[0].id)
 
     def talk(self, text):
         self.engine.say(text)
